@@ -69,7 +69,7 @@ void main()
 
 		else
 		{
-			f = 144 * (x*y);
+			f = 144 / (x*y);
 			printf("int f = %d \n", f);
 		}
 
