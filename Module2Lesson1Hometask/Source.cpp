@@ -144,25 +144,46 @@ void main()
 		////5.	Напишите функцию double f(double x, double y, double z), которая возвращает m*n/k, где k есть меньшее из чисел x, y, z, а m и n 
 		////      есть среднее и большее из этих чисел. Предполагается, что значения параметров больше нуля
 
-		//int A = 0, B = 0;
+		double f=0, x=0, y=0, z=0, m=0, n=0, k=0;
 
-		//printf("Введите значение A:\t");
-		//scanf("%d", &A);
+		printf("Введите значение x = \t");
+		scanf("%lf", &x);
 
-		//printf("Введите значение B:\t");
-		//scanf("%d", &B);
+		printf("Введите значение y = \t");
+		scanf("%lf", &y);
 
-		//if (A > 0 || B < -2)
-		//{
-		//	printf("True\n");
+		printf("Введите значение z = \t");
+		scanf("%lf", &z);
 
-		//}
+		if (x < y && x < z)
+		{
+			k = x;
+			m = y;
+			n = z;
 
-		//else
-		//{
-		//	printf("False\n");
-		//}
+			f = (m*n) / k;
+			printf("функция f = %lf\n", f);
+		}
 
+		else if (y < x && y < z)
+		{
+			k = y;
+			m = x;
+			n = z;
+
+			f = (m*n) / k;
+			printf("функция f = %lf\n", f);
+		}
+
+		else if (z < x && z < y)
+		{
+			k = z;
+			m = x;
+			n = y;
+
+			f = (m*n) / k;
+			printf("функция f = %lf\n", f);
+		}
 
 	}
 
